@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山海经大乱斗</title>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/PointerLockControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="ui-overlay">
+            <h1 id="title">三海经大乱斗</h1>
+        </div>
+        
+        <div id="health-container">
+            <div>生命值</div>
+            <div class="health-bar">
+                <div id="health-fill" class="health-fill" style="width: 100%;"></div>
+            </div>
+        </div>
+        
+        <div id="score-container">
+            <h2>分数: <span id="score">0</span></h2>
+        </div>
+        
+        <div id="controls">
+            <div class="control-info">移动: W A S D</div>
+            <div class="control-info">攻击: 鼠标左键</div>
+        </div>
+        
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>

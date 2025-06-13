@@ -1,0 +1,118 @@
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #fff;
+            height: 100vh;
+        }
+        
+        #game-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        canvas {
+            display: block;
+        }
+        
+        #ui-overlay {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            pointer-events: none;
+        }
+        
+        #title {
+            font-size: 2.5rem;
+            color: #0fb9b1;
+            text-shadow: 0 0 10px rgba(15, 185, 177, 0.8);
+            margin-bottom: 10px;
+        }
+        
+        #health-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 40, 60, 0.8);
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        #score-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 40, 60, 0.8);
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+        
+        #controls {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .health-bar {
+            width: 200px;
+            height: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+        
+        .health-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ff9966, #ff5e62);
+            transition: width 0.3s;
+        }
+        
+        .control-info {
+            display: inline-block;
+            margin: 5px 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(to right, #0fb9b1, #0a86b8);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            margin: 10px 5px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(15, 185, 177, 0.4);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(15, 185, 177, 0.6);
+        }
+        
+        #model-switcher {
+            position: absolute;
+            bottom: 80px;
+            left: 20px; 
+            background: rgba(0, 40, 60, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            max-width: 300px;
+        }
+    </style>
